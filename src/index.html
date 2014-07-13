@@ -8,13 +8,12 @@
 </head>
 
 <body ng-controller='AppCtrl'>
-  {{data}}
+  <div class="background" ng-class="{'background-apartado': data.panel_visible}">
 
   <div class="controles">
     <button ng-click='mostrar_panel()'>Cambiar</button>
   </div>
 
-  <div class="background" ng-class="{'background-apartado': data.panel_visible}">
     <video autoplay loop>
       <source src="./backgrounds/test.mov"/>
     </video>
