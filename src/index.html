@@ -1,9 +1,29 @@
-<html>
+<html ng-app='app'>
+
 <head>
+  <script src='js/angular.js'></script>
+  <script src='js/app.js'></script>
+  <script src='js/controllers/MainCtrl.js'></script>
+  <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
-  <video autoplay>
-    <source src="./chrome.webm"/>
-  </video>
+
+<body ng-controller='AppCtrl'>
+  {{data}}
+
+  <div class="controles">
+    <button ng-click='mostrar_panel()'>Cambiar</button>
+  </div>
+
+  <div class="background" ng-class="{'background-apartado': data.panel_visible}">
+    <video autoplay loop>
+      <source src="./backgrounds/test.mov"/>
+    </video>
+  </div>
+
+  <div class="panel" ng-class="{'panel-visible': data.panel_visible}">
+    <img src='./backgrounds/test.png'>
+    <img src='./backgrounds/otro.png'>
+  </div>
+
 </body>
 </html>
