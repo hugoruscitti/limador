@@ -11,17 +11,16 @@
   <div class="background" ng-class="{'background-apartado': data.panel_visible}">
 
   <div class="controles">
-    <button ng-click='mostrar_panel()'>Cambiar</button>
+    <button id='btn-panel' ng-click='mostrar_panel()'></button>
   </div>
 
-    <video autoplay loop>
-      <source src="./backgrounds/test.mov"/>
+    <video autoplay loop id='video'>
+      <source ng-src="{{data.video_seleccionado}}"/>
     </video>
   </div>
 
   <div class="panel" ng-class="{'panel-visible': data.panel_visible}">
-    <img src='./backgrounds/test.png'>
-    <img src='./backgrounds/otro.png'>
+    <a ng-repeat='fondo in data.fondos' href class='item' ng-click='seleccionar(fondo)'><img class='fondo' ng-src='{{fondo.miniatura}}'></a>
   </div>
 
 </body>
