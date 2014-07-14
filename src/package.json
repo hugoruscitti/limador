@@ -2,6 +2,6 @@
 	"name": "ejemplo",
 	"main": "index.html",
 	"window": {
-		"as_desktop": false
+		"as_desktop": true
 	}
 }
