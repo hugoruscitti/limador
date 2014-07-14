@@ -11,7 +11,7 @@ video {
 div.controles {
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 200px;
   z-index: 100;
   opacity: 0.1;
 }
@@ -46,7 +46,7 @@ div.background {
 
   background-image: url('mensaje.png');
   background-repeat: no-repeat;
-  background-position-y: 45%;
+  background-position-y: 220px;
   background-position-x: right;
 }
 

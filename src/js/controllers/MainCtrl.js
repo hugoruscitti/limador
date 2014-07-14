@@ -36,7 +36,11 @@ app.controller("AppCtrl", function($scope) {
     },
   ];
 
-  $scope.mostrar_panel = function() {
+  $scope.ocultar_panel = function() {
+    $scope.data.panel_visible = false;
+  }
+
+  $scope.alternar_panel = function() {
     $scope.data.panel_visible = !$scope.data.panel_visible;
   }
 
