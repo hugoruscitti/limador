@@ -28,6 +28,8 @@ div.panel {
   background-color: white;
   right: -300px;
   transition: right 0.2s;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 div.panel-visible {
@@ -41,6 +43,11 @@ div.background {
   top: 0;
   bottom: 0;
   transition: right 0.2s, left 0.2s;
+
+  background-image: url('mensaje.png');
+  background-repeat: no-repeat;
+  background-position-y: 45%;
+  background-position-x: right;
 }
 
 div.background-apartado {
